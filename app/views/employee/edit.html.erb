@@ -1,0 +1,69 @@
+<html>
+    <h1>Update your employee data</h1>
+    <table>
+    <%= form_for :user, url: {action: "update"} do |f| %>
+        <tr>
+            <td>First Name</td>
+            <td>:</td>
+            <td><%= f.text_field :fname %><br></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>:</td>
+            <td><%= f.text_field :lname %><br></td>
+        </tr>
+        <tr>
+            <td>Employee ID</td>
+            <td>:</td>
+            <td><%= f.number_field :empid %><br></td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td>:</td>
+            <td><%= f.email_field :mail_id %><br></td>
+        </tr>
+      
+        <tr>
+            <td>Job</td>
+            <td>:</td>
+            <td><%= f.text_field :job %><br></td>
+        </tr>
+      
+        <tr>
+            <td>MGR</td>
+            <td>:</td>
+            <td><%= f.number_field :mgr %><br></td>
+        </tr>
+      
+        <tr>
+            <td>Hire Date</td>
+            <td>:</td>
+            <td><%= f.date_field :hiredate %><br></td>
+        </tr>
+      
+        <tr>
+            <td>Salary</td>
+            <td>:</td>
+            <td><%= f.text_field :salary %><br></td>
+        </tr>
+      
+        <tr>
+            <td>COMM</td>
+            <td>:</td>
+            <td><%= f.text_field :comm %><br></td>
+        </tr>
+      
+        <tr>
+            <td>Dept No</td>
+            <td>:</td>
+            <td><%= f.number_field :deptno %><br></td>
+        </tr>
+        <tr>
+            <td><%= submit_tag "Save" %></td>
+        </tr>
+        <% end %>
+
+
+
+    </table>
+</html>

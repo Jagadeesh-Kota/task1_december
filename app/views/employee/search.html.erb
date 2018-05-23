@@ -1,0 +1,23 @@
+<h1>Search Your Employee data</h1>
+<table>
+<%= form_tag('/employee/view') do %>
+<tr>
+<td><%= label_tag 'fname',"First Name" %></td>
+<td>:</td>
+<td><%= text_field_tag 'fname' %><br></td>
+</tr>
+<tr>
+<td><%= label_tag 'lname',"Last Name" %></td>
+<td>:</td>
+<td><%= text_field_tag 'lname' %><br></td>
+</tr>
+<tr>
+<td><%= label_tag 'mail_id',"Email ID" %></td>
+<td>:</td>
+<td><%= email_field_tag 'mail_id' %><br></td>
+</tr>
+<tr>
+<td><%= submit_tag "Search" %></td>
+</tr>
+<% end %>
+</table>

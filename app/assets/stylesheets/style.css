@@ -1,0 +1,18 @@
+#b1 {
+    
+    background-color:lightpink;
+    color :#000000;
+}
+#b2{
+    background-color:lightyellow;
+    
+}
+#center{
+    text-align: center;
+}
+#body{
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+}
